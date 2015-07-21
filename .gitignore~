@@ -2,6 +2,7 @@
 /Configuration/
 /Data/
 /Packages/*
+/Packages/Application/WE.FinalProject/Configuration/Settings.yaml
 !/Packages/Application
 /Web/
 /bin/

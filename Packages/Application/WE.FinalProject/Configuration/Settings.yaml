@@ -1,0 +1,9 @@
+TYPO3:
+  Flow:
+    persistence:
+      backendOptions:
+        driver: 'pdo_mysql'
+        dbname: 'finalproject' # adjust to your database name
+        user: 'root'         # adjust to your database user
+        password: '123' # adjust to your database password
+        host: 'localhost'    # adjust to your database host
