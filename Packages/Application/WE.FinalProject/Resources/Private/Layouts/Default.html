@@ -2,13 +2,16 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title><f:render section="Title" /></title>
+		<title><f:render section="Title"/></title>
 		<f:base />
+		<link rel="stylesheet" href="{f:uri.resource(path: 'css/bootstrap.min.css', package: 'WE.FinalProject')}" />
 	</head>
 	<body>
 		<f:flashMessages class="flashmessages" />
 
 		<h1><f:render section="Title" /></h1>
 		<f:render section="Content" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="{f:uri.resource(path: 'js/bootstrap.min.js', package: 'WE.FinalProject')}"></script>
 	</body>
 </html>

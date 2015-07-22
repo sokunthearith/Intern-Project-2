@@ -21,6 +21,13 @@ class QuestionController extends ActionController {
 	/**
 	 * @return void
 	 */
+	public function homeAction() {
+		$this->view->assign('questions', $this->questionRepository->findAll());
+	}
+
+	/**
+	 * @return void
+	 */
 	public function indexAction() {
 		$this->view->assign('questions', $this->questionRepository->findAll());
 	}

@@ -1,4 +1,4 @@
-<f:layout name="Default" />
+<!--
 
 <f:section name="Title">A list of questions</f:section>
 
@@ -22,4 +22,78 @@
 		</f:else>
 	</f:if>
 	<p><f:link.action action="new">Create a new question</f:link.action></p>
+</f:section> -->
+<f:layout name="MyLayout"/>
+<f:section name="mycontent">
+<nav class="navbar navbar-default">
+  <div class="container">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a href="" class="navbar-brand">Team 2</a>
+      </div> <!-- End navbar-header -->
+
+      <div class="collapse navbar-collapse" id="navigation">
+          <ul class="nav navbar-nav navbar-right">
+              <li id="list-1" class="item active"><a href="">Home</a></li>
+              <li id="list-2" class="item"><a id="form-1" class="list" role="button" >Form 1</a></li>
+              <li id="list-3" class="item"><a id="form-2" class="list" role="button" >Form 2</a></li>
+              <li id="list-4" class="item"><a id="form-3" class="list" role="button" >Form 3</a></li>
+          </ul>
+      </div>
+
+  </div> <!-- End container-fluid -->
+</nav>
+
+<div class="container">
+  <div class="row">
+      <h3 id="listTitle" class="text-center" style="margin-bottom: 20px;margin-top: 0px;"></h3>
+  </div>
+</div>
+
+<div class="container">
+  <div id="questionList" class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="jumbotron" style="padding: 5% 10%;">
+              <h1></h1>
+              <p id="content"></p>
+
+              <p class="text-right"><a id="next" class="btn btn-primary btn-lg" role="button">Next</a>
+              <a id="btn-frm1" class="btn btn-primary btn-lg" role="button" style="visibility:hidden">Go to Form1</a>
+  </p>
+          </div>
+      </div>
+
+      <!-- Question list here -->
+
+  </div>
+  <div id="btn-group" class="text-right">
+      <a href="#scrollup">
+          <button class="btn btn-primary" type="button" name="Submit">Submit</button>
+      </a>
+      <button class="btn btn-danger" type="button" name="Cancel">Cancel</button>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-8 col-sm-8 col-xs-12">
+          <table id="answerContainer" class="table" style="display: none">
+              <tr>
+                  <th>Header1</th>
+                  <th>Header2</th>
+              </tr>
+          </table>
+      </div>
+  </div>
+
+</div>
+<div class="col-md-12">
+  <a href="#navigation">
+      <button id="scrollup" class="pull-right" type="button" style="visibility:hidden">Scroll Up</button>
+  </a>
+</div>
 </f:section>

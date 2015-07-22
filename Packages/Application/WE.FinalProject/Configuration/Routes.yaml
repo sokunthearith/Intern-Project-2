@@ -1,0 +1,16 @@
+-
+  name: 'HomeSubroutes'
+  uriPattern: ''
+  defaults:
+    '@package': 'WE.FinalProject'
+    '@controller': 'Question'
+    '@action': 'index'
+    '@format': 'html'
+-
+  name: 'form1'
+  uriPattern: 'form1'
+  defaults:
+    '@package': 'WE.FinalProject'
+    '@controller': 'Question'
+    '@action': 'form1'
+    '@format': 'json'
