@@ -20,3 +20,4 @@ $ add this "127.0.0.1 set.your.virtualhost.name.here" under the current line of 
 $ sudo service apache2 restart
 # set permission 777 to all folders when necessary
 
+
